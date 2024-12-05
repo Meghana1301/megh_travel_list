@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 exports.handler = async (event) => {
-   const publicDir = path.join(__dirname, '..', 'Meghana_travel_backend', 'public');
+   const publicDir = path.join('Meghana_travel_backend', 'public');
 
     if (event.path === '/') {
         // Serve index.html
