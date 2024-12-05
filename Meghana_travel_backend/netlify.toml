@@ -1,0 +1,14 @@
+[build]
+  command = "npm install"
+  publish = "public"
+  functions = "functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/handler"
+  status = 200
+
+[[redirects]]
+  from = "/dest-images/*"
+  to = "/dest-images/"
+  status = 200
